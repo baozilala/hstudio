@@ -1,0 +1,93 @@
+<header class="slim-header">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1 class="text-center">Welcome to Haozhan Studio</h1>
+    </div>
+  </div>
+</header>
+
+<div class="top-bar" id="menu">
+  <div class="top-bar-left">
+    <ul class="brand">
+      <li class="menu-text">
+          {{ page.header }}
+      </li>
+    </ul>
+  </div>
+  <div class="top-bar-right user-menu">
+    {{ page.secondary_menu }}
+  </div>
+  <div class="top-bar-right">
+    {{ page.primary_menu }}
+  </div>
+</div>
+
+{% if page.highlighted %}
+<div class="row">
+  <div class="large-12 columns">
+    {{ page.highlighted }}
+  </div>
+</div>
+{% endif %}
+
+<div id="content">
+  <div class="row">
+    <div class="large-9 columns">
+      {{ page.content }}
+    </div>
+    {% if page.right_sidebar %}
+      <div class="large-3 columns" id="right_sidebar">
+        {{ page.right_sidebar }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="row up_bottom">
+    <div class="medium-4 columns">
+      <div class="left_bottom">
+        <h4>Drupal 有什么优点？</h4>
+        <p>Drupal 有着强大而且活跃的社区，他们来自228个国家、181个不同语言地区的一百多万人在使用Drupal。开源，免费属于世界顶级的强大系统! 我们带给客户的价值远远不止于简单的建站，建站只是技术上的实现！让我们为客户提供完善的网络营销解决方案。</p>
+      </div>
+    </div>
+    <div class="medium-8 columns">
+      <div class="row collapse">
+        <div class="medium-4 columns">
+          <div class="bottom-info">
+            <h4 class="whoweare">Who we are?</h4>
+            <p><strong>浩展工作室</strong>创建于2013年，专注于Drupal企业网站建设，提供专业的Drupal建站服务</p>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <div class="bottom-info">
+            <h4 class="whatwedo">What we do?</h4>
+            <p>建站咨询、建站规划、模板设计、功能实现、社交媒体、SEO基础优化等服务。</p>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <div class="bottom-info">
+            <h4 class="whatwedone">What we done?</h4>
+            <p>浩展工作室，客户覆盖中美两地，帮助了多个企业、个体户、实施了网站建设。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row middle-bottom">
+    <div class="large-12 columns small-centered">
+      {{ page.bottom_footer }}
+    </div>
+  </div>
+
+  <div class="row dowm_bottom">
+    <div class="medium-9 columns">
+      {{ page.left_footer }}
+    </div>
+    <div class="medium-3 columns">
+      {{ page.right_footer }}
+    </div>
+  </div>
+</footer>

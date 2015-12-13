@@ -1,0 +1,150 @@
+<header class="slim-header">
+  <div class="top-bar-right user-menu">
+    {{ page.secondary_menu }}
+  </div>
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1 class="text-center">Welcome to Haozhan Studio</h1>
+    </div>
+  </div>
+</header>
+
+<div class="top-bar" id="menu">
+  <div class="top-bar-left">
+    <ul class="brand">
+      <li class="menu-text">
+          {{ page.header }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="top-bar-right">
+    {{ page.primary_menu }}
+  </div>
+</div>
+
+{% if page.highlighted %}
+<div class="row">
+  <div class="medium-12 columns callount alert">
+    {{ page.highlighted }}
+  </div>
+</div>
+{% endif %}
+
+<!-- Main Content -->
+<div id="content">
+  <div class="row">
+    <div class="small-9 small-centered columns briefinfo">
+      <h6><strong>浩展工作室</strong>，我们是一个专业的小团队，精心打造属于您的网页。让您得到一份不同的体验。我们在一直努力的满足您的需求，让您得到更优的体验。让人眼前一亮，印象深刻的作品。赶快联系我们吧，我们能让您的品牌富有生命力！</h6>
+    </div>
+  </div>
+</div>
+<!-- End Content -->
+<div id="front-build-step">
+  <div class="row">
+    <div class="large-12 columns hide-for-small">
+      <h3>建站流程</h3>
+      <ul class="step">
+        <li class="step-1">建站前咨询；明确客户需求；提供网站报价</li>
+        <li class="step-2">确立合作关系；签订合同（如有需要）；客户交付预付款并提供网站的相关资料</li>
+        <li class="step-3">页面设计、功能实现，提供演示地址，持续改进与优化网站。</li>
+        <li class="step-4">网站完成后收取余款，提供网站的使用方法，文字或视频教程！提供一个月免费空间使用和服务器维护。</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="front-cases-blogs">
+  <div class="row">
+    <div class="medium-7 columns">
+      {{ page.cases }}
+    </div>
+    <div class="medium-5 columns">
+      {{ page.blogs }}
+    </div>
+  </div>
+</div>
+
+<div id="front-build-content">
+  <div class="row " id="build-content">
+    <div class="medium-12 columns"><h3>建站内容</h3></div>
+    <div class="medium-4 columns">
+      <h4 class="build-consulting">建站咨询</h4>
+      <p>提供专业并且免费的建站咨询，您还等什么？马上联系我们！</p>
+    </div>
+    <div class="medium-4 columns">
+      <h4 class="build-planing">网站规划</h4>
+      <p>根据客户的构想，明细化建站需求，以确定网站定位、风格和功能。</p>
+    </div>
+    <div class="medium-4 columns">
+      <h4 class="build-theme">模板设计</h4>
+      <p>我们的设计并不仅是美工，而是根据网站的定位，设计出美观易用，符合自身特点的模板。</p>
+    </div>
+  </div>
+
+  <div class="row" id="build-content">
+    <div class="medium-4 columns">
+      <h4 class="build-functions">功能实现</h4>
+      <p>在满足客户功能需求的同时把网站设计得简单易用。</p>
+    </div>
+    <div class="medium-4 columns">
+      <h4 class="build-seo">SEO优化</h4>
+      <p>SEO优化会贯穿整个建站过程。不仅是技术的实现，更是思维的导向的结果。</p>
+    </div>
+    <div class="medium-4 columns">
+      <h4 class="build-test">空间试用</h4>
+      <p>我们会为客户提供三个月免费空间试用和网站维护等一站式的专业级服务，为顾客节省宝贵的时间精力。</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="row up_bottom">
+    <div class="medium-4 columns">
+      <div class="left_bottom">
+        <h4>Drupal 有什么优点？</h4>
+        <p>
+          Drupal 有着强大而且活跃的社区，他们来自228个国家、181个不同语言地区的一百多万人在使用Drupal。开源，免费属于世界顶级的强大系统! 我们带给客户的价值远远不止于简单的建站，建站只是技术上的实现！让我们为客户提供完善的网络营销解决方案。
+        </p>
+      </div>
+    </div>
+    <div class="medium-8 columns">
+      <div class="row collapse">
+        <div class="medium-4 columns">
+          <div class="bottom-info">
+            <h4 class="whoweare">Who we are?</h4>
+            <p><strong>浩展工作室</strong>创建于2013年，专注于Drupal企业网站建设，提供专业的Drupal建站服务</p>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <div class="bottom-info">
+            <h4 class="whatwedo">What we do?</h4>
+            <p>建站咨询、建站规划、模板设计、功能实现、社交媒体、SEO基础优化等服务。</p>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <div class="bottom-info">
+            <h4 class="whatwedone">What we done?</h4>
+            <p>浩展工作室，客户覆盖中美两地，帮助了多个企业、个体户、实施了网站建设。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row middle-bottom">
+    <div class="large-12 columns small-centered">
+      {{ page.bottom_footer }}
+    </div>
+  </div>
+
+  <div class="row dowm_bottom">
+    <div class="medium-9 columns">
+      {{ page.left_footer }}
+    </div>
+    <div class="medium-3 columns">
+      {{ page.right_footer }}
+    </div>
+  </div>
+</footer>

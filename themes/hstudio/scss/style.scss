@@ -1,0 +1,175 @@
+/* #admin-menu,#admin-menu-icon,#admin-menu-menu,#admin-menu-account {
+    font-size: 12px!important;
+    li{
+      font-size: 12px;
+    }
+} */
+/* 上面是为了防止admin-menu字体过大。 */
+
+/*-----------------------------------------------------------------------------
+ *全局标签样式
+ */
+body{
+  font-family: "Microsoft YaHei", "Arial", "Verdana", "Tahoma";
+  color: #333;
+  p{
+    font-size: 0.9375rem;
+  }
+  a{
+    color: #69f;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: "Microsoft YaHei", "Arial", "Verdana", "Tahoma";
+}
+
+/*-----------------------------------------------------------------------------
+ *Header区域
+ */
+.user-menu a{
+  color:#fff;
+  font-weight: 900;
+}
+
+.slim-header{
+  background: url(../img/header-star.svg) #69f;
+  padding: 3rem 0;
+  h1,#site-slogan{
+    color: #fff;
+  }
+}
+
+.brand{
+  margin-bottom: 0;
+}
+/*-----------------------------------------------------------------------------
+ *Node区域
+ */
+.node__content p{
+  font-size:.875rem;
+  margin-bottom: .6rem;
+}
+
+ul.menu.nodemenu {
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* node的路后的编辑， */
+.tabs{
+  .primary{
+    margin: 0;
+    background: none;
+    li{
+      a {
+        color: #000;
+        &:hover{
+          background: none;
+        }
+        &:focus{
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------------------------------------------------------
+ *留言区域
+ */
+.comment-wrapper{
+  border-top: 1px solid rgba(0,0,0,0.3);
+  .title{
+    text-align: center;
+    padding:{
+      top:2rem;
+    }
+  }
+  .filter-guidelines{
+    display: none;
+  }
+}
+
+/*-----------------------------------------------------------------------------
+ *底部样式
+ */
+#footer{
+  background: #6699FF;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+  h1,h2,h3,h4,h5,h6{
+    color: #fff;
+  }
+  .contextual-links a{
+    color:#333;
+  } /*此处是block下拉菜单 上方把A标签全部变成白色了，Block修改菜单背景色为白色，白色字体无法显示*/
+  .up_bottom{
+    padding: 20px 0;
+    text-align: center;
+  }
+  .left_bottom{
+    p{
+      padding-top: 10px;
+    }
+  }
+  .dowm_bottom{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 20px 0;
+  }
+
+  .bottom-info{
+    padding: 0px 20px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    height: 200px;
+    h4{
+      padding: 50px 0px 0px;
+      background: url("../img/upbottomicon.png")no-repeat scroll center top;
+    }
+  }
+  .whoweare{
+    background-position: center 0px;
+  }
+
+  .whatwedo{
+    background-position: center -96px!important;
+  }
+
+  .whatwedone{
+    background-position: center -190px !important;
+  }
+}
+
+.collapse{
+  margin: 0;
+}
+
+@media only screen and (min-width:40em){
+  .top-bar input, .top-bar select, .top-bar .button, .top-bar button{
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .bottom-info{
+    padding: 50px 20px 0;
+    border-top: 1px dashed rgba(255,255,255,0.2);
+    border-left: none;
+    height: auto;
+  }
+  #front-build-step{
+    display: none;
+    border-bottom: 0;
+  }
+}
+
+@media only screen and (max-width:1025px){
+  .build-step{
+    display: none;
+    border-top: none;
+    padding: none;
+  }
+}

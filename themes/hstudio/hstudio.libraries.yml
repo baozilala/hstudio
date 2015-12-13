@@ -1,0 +1,12 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/fa.min.css: {}
+      css/foundation.min.css: {}
+      css/style.min.css: {}
+      css/page.min.css: {}
+  js:
+    js/foundation.min.js: {}
+  dependencies:
+    - core/jquery

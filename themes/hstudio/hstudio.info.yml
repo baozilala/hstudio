@@ -1,0 +1,23 @@
+name: 浩展工作室
+type: theme
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+package: Core
+
+# version: VERSION
+core: 8.x
+libraries:
+  - hstudio/global-styling
+
+regions:
+  header: 头部
+  primary_menu: 主菜单
+  secondary_menu: 辅菜单
+  highlighted: 高亮
+  cases: 首页案例
+  blogs: 首页博客
+  left_sidebar: 左侧栏
+  content: 主内容
+  right_sidebar: 右侧栏
+  left_footer: 左脚
+  right_footer: 右脚
+  bottom_footer: 底部脚
